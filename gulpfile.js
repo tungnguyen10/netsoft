@@ -2,6 +2,7 @@ var gulp = require("gulp");
 var sass = require("gulp-sass");
 var minify = require('gulp-minify');
 var pug = require('gulp-pug');
+const imagemin = require('gulp-imagemin');
 var browserSync = require('browser-sync').create();
 
 // listen events
@@ -31,7 +32,15 @@ gulp.task("sass", function() {
         exclude: ['tasks']
     }))
     .pipe(gulp.dest('./front/templates/js'))
-    .pipe(browserSync.stream()); 
+    .pipe(browserSync.stream());
+
+  // img to images
+  gulp.src('./src/templates/img/*')
+  .pipe(imagemin())
+  .pipe(gulp.dest('./front/templates/img/'))
+  .pipe(browserSync.stream());
+    
+ 
 
   // pug to html 
   gulp.src('./src/*.pug')
