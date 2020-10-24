@@ -105,6 +105,9 @@ hgroup{
   overflow: hidden;
   position: relative;
   display: block;
+  &:hover{
+    animation: imgShine .75s ease-in-out;
+  }
   &:before {
     position: absolute;
     content: "";
