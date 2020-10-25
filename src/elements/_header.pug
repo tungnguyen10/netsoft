@@ -15,13 +15,49 @@ header
   .menu
     .container
       p.logo
-      ul
-        li.active: a(href="#") trang chủ
-        li: a(href="#") giới thiệu
-        li: a(href="#") kho giao diện
-        li: a(href="#") bảng giá
-        li: a(href="#") dịch vụ
-        li: a(href="#") liên hệ
+      ul.item_big
+        li.nav-item.active
+          a.a-img(href='/' title='Trang chủ')
+            span Trang chủ
+        li.nav-item
+          a.a-img(href='/gioi-thieu' title='Giới thiệu')
+            span Giới thiệu
+        li.nav-item
+          a.a-img(href='/kho-giao-dien' title='Kho giao diện')
+            span Kho giao diện
+            i.fa.fa-angle-down
+          ul.item_small
+            li
+              a(href='/doanh-nghiep' title='Doanh nghiệp') Doanh nghiệp 
+            li
+              a(href='/bat-dong-san' title='Bất động sản - Xây dựng') Bất động sản - Xây dựng 
+            li
+              a(href='/khach-san-du-lich' title='Khách sạn - Du lịch') Khách sạn - Du lịch 
+        li.nav-item
+          a.a-img(href='/bang-gia' title='bảng giá')
+            span bảng giá
+            i.fa.fa-angle-down
+          ul.item_small
+            li
+              a(href='/san-pham-noi-bat' title='Sản phẩm nổi bật') Sản phẩm nổi bật 
+            li
+              a(href='/san-pham-y-te' title='Sản phẩm y tế')
+                | Sản phẩm y tế 
+                i.fa.fa-angle-right
+              ul
+                li
+                  a.a3(href='/duoc-pham' title='Dược phẩm') Dược phẩm
+            li
+              a(href='/phu-kien-y-te' title='Phụ kiện y tế') Phụ kiện y tế 
+            li
+              a(href='/may-chup-xquang' title='Máy chụp Xquang') Máy chụp Xquang 
+        li.nav-item
+          a.a-img(href='/tin-tuc' title='Tin tức')
+            span Tin tức
+        li.nav-item
+          a.a-img(href='/lien-he' title='Liên hệ')
+            span Liên hệ
+
 
 
 

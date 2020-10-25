@@ -15,7 +15,7 @@ html(lang="vi")
     link(href="./templates/css/owl.carousel.css" rel="stylesheet")
     link(href="./templates/css/owl.theme.default.css" rel="stylesheet")
     link(href="./templates/css/bootstrap.css" rel="stylesheet")
-    link(href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/fontawesome.min.css" rel="stylesheet")
+    link(href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" rel="stylesheet")
     link(href="./templates/css/style.css" rel="stylesheet")
 
 body
@@ -51,25 +51,50 @@ body
       .row
         .col-lg-4
           .card
-            figure: img.card-img-top(src='./templates/img/image1.jpg' alt='Card image cap')
+            figure: a(href="#"): img.card-img-top(src='./templates/img/image1.jpg' alt='Card image cap')
             .card-body
-              h3.card-title Card title
-              p.card-text
-                | Some quick example text to build on the card title and make up the bulk of the card&apos;s content.
+              h3.card-title Thiết Kế Website
+              p.card-text Internet đã được ứng dụng vào cuộc sống, hoạt động kinh doanh và ngày càng trở nên phổ biến. Xu hướng người dùng sử dụng Internet để tìm kiếm thông tin ...
         .col-lg-4
           .card
-            figure: img.card-img-top(src='./templates/img/image1.jpg' alt='Card image cap')
+            figure: a(href="#"): img.card-img-top(src='./templates/img/image1.jpg' alt='Card image cap')
             .card-body
-              h3.card-title Card title
-              p.card-text
-                | Some quick example text to build on the card title and make up the bulk of the card&apos;s content.
+              h3.card-title Giải pháp phần mềm
+              p.card-text Internet đã được ứng dụng vào cuộc sống, hoạt động kinh doanh và ngày càng trở nên phổ biến. Xu hướng người dùng sử dụng Internet để tìm kiếm thông tin ...
         .col-lg-4
           .card
-            figure: a(href="#").img-shine: img.card-img-top(src='./templates/img/image1.jpg' alt='Card image cap')
+            figure: a(href="#"): img.card-img-top(src='./templates/img/image1.jpg' alt='Card image cap')
             .card-body
-              h3.card-title Card title
-              p.card-text
-                | Some quick example text to build on the card title and make up the bulk of the card&apos;s content.
+              h3.card-title dịch vụ
+              p.card-text Internet đã được ứng dụng vào cuộc sống, hoạt động kinh doanh và ngày càng trở nên phổ biến. Xu hướng người dùng sử dụng Internet để tìm kiếm thông tin ...
+  section.whychose
+    .container
+      hgroup
+        h2.title Vì sao chọn chúng tôi ?
+        h3 Bạn đang kinh doanh lĩnh vực nào?
+  section.ebook
+    .container
+      hgroup
+        h2.title Ebook 
+          span công nghệ thông tin
+        h3 Bạn đang kinh doanh lĩnh vực nào?
+      .row
+        .col-lg-3
+          .ebook-item
+            figure: a(href="#"): img.card-img-top(src='./templates/img/ebook.png' alt='Card image cap')
+            h3.ebook-title Ebook Công Nghệ Thông Tin
+        .col-lg-3
+          .ebook-item
+            figure: a(href="#"): img.card-img-top(src='./templates/img/ebook.png' alt='Card image cap')
+            h3.ebook-title Ebook Công Nghệ Thông Tin
+        .col-lg-3
+          .ebook-item
+            figure: a(href="#"): img.card-img-top(src='./templates/img/ebook.png' alt='Card image cap')
+            h3.ebook-title Ebook Công Nghệ Thông Tin
+        .col-lg-3
+          .ebook-item
+            figure: a(href="#"): img.card-img-top(src='./templates/img/ebook.png' alt='Card image cap')
+            h3.ebook-title Ebook Công Nghệ Thông Tin
   //- footer
   block footer
     include ./elements/_footer.pug

@@ -1,2 +1,139 @@
 footer
-    |footer
+  .container
+    .row.top-footer
+      .col-xs-12.col-sm-6.col-md-3.col-lg-3.fot_col
+        .footer-widget
+          h4.foo-title
+            span Th&ocirc;ng tin c&ocirc;ng ty
+          .foo-content
+            ul.list-menu
+              li
+                a(href='/' title='Trang chủ')
+                  | Trang ch&#x1EE7;
+              li
+                a(href='/gioi-thieu' title='Về chúng tôi')
+                  | V&#x1EC1; ch&uacute;ng t&ocirc;i
+              li
+                a(href='/collections/all' title='Sản phẩm')
+                  | S&#x1EA3;n ph&#x1EA9;m
+              li
+                a(href='/tin-tuc' title='Tin tức')
+                  | Tin t&#x1EE9;c
+              li
+                a(href='/lien-he' title='Liên hệ')
+                  | Li&ecirc;n h&#x1EC7;
+      .col-xs-12.col-sm-6.col-md-3.col-lg-3.fot_col
+        .footer-widget
+          h4.foo-title
+            span &Dstrok;i&#x1EC1;u kho&#x1EA3;n
+          .foo-content
+            ul.list-menu
+              li
+                a(href='/' title='Trang chủ')
+                  | Trang ch&#x1EE7;
+              li
+                a(href='/gioi-thieu' title='Về chúng tôi')
+                  | V&#x1EC1; ch&uacute;ng t&ocirc;i
+              li
+                a(href='/collections/all' title='Sản phẩm')
+                  | S&#x1EA3;n ph&#x1EA9;m
+              li
+                a(href='/tin-tuc' title='Tin tức')
+                  | Tin t&#x1EE9;c
+              li
+                a(href='/lien-he' title='Liên hệ')
+                  | Li&ecirc;n h&#x1EC7;
+      .col-xs-12.col-sm-6.col-md-3.col-lg-3.fot_col
+        .footer-widget
+          h4.foo-title
+            span H&#x1B0;&#x1EDB;ng d&#x1EAB;n
+          .foo-content
+            ul.list-menu
+              li
+                a(href='/' title='Trang chủ')
+                  | Trang ch&#x1EE7;
+              li
+                a(href='/gioi-thieu' title='Về chúng tôi')
+                  | V&#x1EC1; ch&uacute;ng t&ocirc;i
+              li
+                a(href='/collections/all' title='Sản phẩm')
+                  | S&#x1EA3;n ph&#x1EA9;m
+              li
+                a(href='/tin-tuc' title='Tin tức')
+                  | Tin t&#x1EE9;c
+              li
+                a(href='/lien-he' title='Liên hệ')
+                  | Li&ecirc;n h&#x1EC7;
+      .col-xs-12.col-sm-6.col-md-3.col-lg-3.fot_col.fanpage
+        #fb-root
+        script(async='' defer='' crossorigin='anonymous' src='https://connect.facebook.net/vi_VN/sdk.js#xfbml=1&version=v8.0&appId=148620172432287&autoLogAppEvents=1' nonce='IzBAZvFi')
+        .fb-page(data-href='https://www.facebook.com/thanhtungvemaybay/' data-tabs='timeline' data-width='' data-height='150px' data-small-header='true' data-adapt-container-width='true' data-hide-cover='false' data-show-facepile='true')
+          blockquote.fb-xfbml-parse-ignore(cite='https://www.facebook.com/thanhtungvemaybay/')
+            a(href='https://www.facebook.com/thanhtungvemaybay/') Vé máy bay Thanh Tùng
+
+
+        //- script.
+        //-   timer = setTimeout(() => {
+        //-   (function(d, s, id) {
+        //-   var js, fjs = d.getElementsByTagName(s)[0];
+        //-   if (d.getElementById(id)) return;
+        //-   js = d.createElement(s); js.id = id;
+        //-   js.src = "//connect.facebook.net/vi_VN/sdk.js#xfbml=1&version=v2.6";
+        //-   fjs.parentNode.insertBefore(js, fjs);
+        //-   }(document, 'script', 'facebook-jssdk'));
+        //-   timer = undefined;
+        //-   }, 6000)
+  
+    .row.bottom-footer
+      .col-xs-12.col-sm-12.col-md-12.col-lg-12.info
+        .row
+          .col-xs-12.col-sm-12.col-md-8.col-lg-8.info_col
+            p.logo: img(src="./templates/img/logo.png", alt="logo")
+            ul.store
+              li: span Giải pháp công nghệ thông tin Netsoftvn
+              li.store-address
+                i.fas.fa-map-marker-alt 
+                span 42 Đường số 2, Phường An Lạc A, Quận Bình Tân, Thành phố Hồ Chí Minh
+              li.store-phone
+                i.fas.fa-mobile-alt
+                span
+                  a(href='tel:0327421742') 0327421742
+              li.store-mail
+                i.far.fa-envelope
+                span
+                  a(href='mailto:toadtravel@gmail.com') toadtravel@gmail.com
+          .col-xs-12.col-sm-12.col-md-4.col-lg-4.info_statistics
+            h4.foo-title
+              span Thống kê truy cập
+            dl
+              dt
+                i.fas.fa-user
+                | Số lượng truy cập:
+              dd  3,467,619
+            dl
+              dt
+                i.fas.fa-users
+                | Đang online:
+              dd 1552
+            
+  .copyright &copy; 2020 Bản quyền thuộc về Netsoftvn.com 
+    span: a(href="https://vemaybaythanhtung.com/" target="_blank") | design by Thanh Tung
+  .backtop
+    i.fa.fa-arrow-circle-up
+  .support-online
+    .support-content(style="display: none;")
+      a.call-now(href='tel:0968240896' rel='nofollow')
+        i.fas.fa-mobile-alt(aria-hidden='true')
+        .animated.infinite.zoomIn.kenit-alo-circle
+        .animated.infinite.pulse.kenit-alo-circle-fill
+        span Gọi ngay: 0968240896
+      a.mes(href='https://m.me/thanhtungvemaybay')
+        i.fab.fa-facebook-messenger(aria-hidden='true')
+        span Nhắn tin facebook
+      a.zalo(href='http://zalo.me/0968240896')
+        i.far.fa-comment-dots
+        span Zalo: 0968240896
+    a.btn-support
+      i.far.fa-question-circle(aria-hidden='true')
+      .animated.infinite.zoomIn.kenit-alo-circle
+      .animated.infinite.pulse.kenit-alo-circle-fill
