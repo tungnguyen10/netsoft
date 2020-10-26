@@ -1,28 +1,60 @@
+.section_policy
+  .container
+    .policy-inner
+      .row
+        .col-lg-4.col-sm-6.item
+          .policy-item
+            .media
+              img(src='./templates/img/policy1.png' alt='Chất lượng hàng đầu' data-was-processed='true')
+            .info
+              span Chất lượng hàng đầu
+              p Cam kết tất cả sản phẩm chính hãng 100%
+          // /.policy
+        .col-lg-4.col-sm-6.item
+          .policy-item
+            .media
+              img(src='./templates/img/policy2.png' alt='tư vấn thiết kế' data-was-processed='true')
+            .info
+              span Tư vấn thiết kế
+              p Chúng tôi cam kết tư vấn trong 24h
+          // /.policy
+        .col-lg-4.col-sm-12.item
+          .policy-item
+            .media
+              img(src='./templates/img/policy4.png' alt='Hỗ trợ online 24/7' data-was-processed='true')
+            .info
+              span Hỗ trợ online 24/7
+              p
+                | Gọi ngay 
+                a.fone(href='tel:0968240896') 0968240896
+                |  để được tư vấn
+          // /.policy
+
 footer
   .container
     .row.top-footer
-      .col-xs-12.col-sm-6.col-md-3.col-lg-3.fot_col
+      .col-xs-12.col-sm-6.col-md-6.col-lg-3.fot_col
         .footer-widget
           h4.foo-title
-            span Th&ocirc;ng tin c&ocirc;ng ty
+            span Thông tin công ty
           .foo-content
             ul.list-menu
               li
                 a(href='/' title='Trang chủ')
-                  | Trang ch&#x1EE7;
+                  | Trang chủ
               li
                 a(href='/gioi-thieu' title='Về chúng tôi')
-                  | V&#x1EC1; ch&uacute;ng t&ocirc;i
+                  | Về chúng tôi
               li
-                a(href='/collections/all' title='Sản phẩm')
-                  | S&#x1EA3;n ph&#x1EA9;m
+                a(href='/collections/all' title='Giao diện')
+                  | Giao diện
               li
                 a(href='/tin-tuc' title='Tin tức')
-                  | Tin t&#x1EE9;c
+                  | Tin tức
               li
                 a(href='/lien-he' title='Liên hệ')
-                  | Li&ecirc;n h&#x1EC7;
-      .col-xs-12.col-sm-6.col-md-3.col-lg-3.fot_col
+                  | Liên hệ
+      .col-xs-12.col-sm-6.col-md-6.col-lg-3.fot_col
         .footer-widget
           h4.foo-title
             span &Dstrok;i&#x1EC1;u kho&#x1EA3;n
@@ -43,7 +75,7 @@ footer
               li
                 a(href='/lien-he' title='Liên hệ')
                   | Li&ecirc;n h&#x1EC7;
-      .col-xs-12.col-sm-6.col-md-3.col-lg-3.fot_col
+      .col-xs-12.col-sm-6.col-md-6.col-lg-3.fot_col
         .footer-widget
           h4.foo-title
             span H&#x1B0;&#x1EDB;ng d&#x1EAB;n
@@ -64,26 +96,12 @@ footer
               li
                 a(href='/lien-he' title='Liên hệ')
                   | Li&ecirc;n h&#x1EC7;
-      .col-xs-12.col-sm-6.col-md-3.col-lg-3.fot_col.fanpage
+      .col-xs-12.col-sm-6.col-md-6.col-lg-3.fot_col.fanpage
         #fb-root
         script(async='' defer='' crossorigin='anonymous' src='https://connect.facebook.net/vi_VN/sdk.js#xfbml=1&version=v8.0&appId=148620172432287&autoLogAppEvents=1' nonce='IzBAZvFi')
         .fb-page(data-href='https://www.facebook.com/thanhtungvemaybay/' data-tabs='timeline' data-width='' data-height='150px' data-small-header='true' data-adapt-container-width='true' data-hide-cover='false' data-show-facepile='true')
           blockquote.fb-xfbml-parse-ignore(cite='https://www.facebook.com/thanhtungvemaybay/')
             a(href='https://www.facebook.com/thanhtungvemaybay/') Vé máy bay Thanh Tùng
-
-
-        //- script.
-        //-   timer = setTimeout(() => {
-        //-   (function(d, s, id) {
-        //-   var js, fjs = d.getElementsByTagName(s)[0];
-        //-   if (d.getElementById(id)) return;
-        //-   js = d.createElement(s); js.id = id;
-        //-   js.src = "//connect.facebook.net/vi_VN/sdk.js#xfbml=1&version=v2.6";
-        //-   fjs.parentNode.insertBefore(js, fjs);
-        //-   }(document, 'script', 'facebook-jssdk'));
-        //-   timer = undefined;
-        //-   }, 6000)
-  
     .row.bottom-footer
       .col-xs-12.col-sm-12.col-md-12.col-lg-12.info
         .row
