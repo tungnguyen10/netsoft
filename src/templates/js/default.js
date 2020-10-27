@@ -29,10 +29,12 @@ $(document).ready(function () {
 		e.stopPropagation();
 		$('.wrapmenu_right').toggleClass('open_sidebar_menu');
 		$('.opacity_menu').toggleClass('open_opacity');
+		$('body').toggleClass('open_menu');
 	});
 	$('.opacity_menu').click(function (e) {
 		$('.wrapmenu_right').removeClass('open_sidebar_menu');
 		$('.opacity_menu').removeClass('open_opacity');
+		$('body').toggleClass('open_menu');
 	});
 	$(".menubar_pc").click(function () {
 		$('.wrapmenu_full').slideToggle('fast');
