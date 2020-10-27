@@ -754,8 +754,9 @@ hgroup {
 .solution {
   &-it {
     position: relative;
-    margin-bottom: 4.14rem;
+    margin-bottom: 2.14rem;
     .card {
+      margin-bottom: 2rem;
       cursor: pointer;
       overflow: hidden;
       box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.075) !important;
