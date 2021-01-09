@@ -1,5 +1,5 @@
 doctype html
-html(lang="vi")
+html(lang="vi" , id="index")
   head
     title #{TITLE}
     meta(charset="utf-8")
@@ -9,7 +9,7 @@ html(lang="vi")
     meta(name="keywords" content="KEYWORDS")
     meta(name="format-detection" content="telephone=no")
     meta(name='viewport', content='width=device-width, initial-scale=1')
-
+    link(href="./templates/css/default.css" rel="stylesheet")
     link(href="./templates/css/bootstrap.css" rel="stylesheet")
     link(href="./templates/css/animate.min.css" rel="stylesheet")
     link(href="./templates/css/owl.carousel.css" rel="stylesheet")
@@ -33,7 +33,7 @@ body
         .carousel-item.active
           img.d-block.w-100(src='./templates/img/banner.jpg' alt='First slide')
         .carousel-item
-          img.d-block.w-100(src='./templates/img/banner1.jpg' alt='Second slide')
+          img.d-block.w-100(src='./templates/img/banner.jpg' alt='Second slide')
         .carousel-item
           img.d-block.w-100(src='./templates/img/banner.jpg' alt='Third slide')
       a.carousel-control-prev(href='#carouselExampleIndicators' role='button' data-slide='prev')
@@ -49,19 +49,19 @@ body
           span Netsoftvn.com
         h3 Bạn đang kinh doanh lĩnh vực nào?
       .row
-        .col-md-6.col-lg-4
+        .col-md-6.col-lg-4.btn-grow-shadow
           .card
             figure: a(href="#"): img.card-img-top(src='./templates/img/image1.jpg' alt='Card image cap')
             .card-body
               h3.card-title Thiết Kế Website
               p.card-text Internet đã được ứng dụng vào cuộc sống, hoạt động kinh doanh và ngày càng trở nên phổ biến. Xu hướng người dùng sử dụng Internet để tìm kiếm thông tin ...
-        .col-md-6.col-lg-4
+        .col-md-6.col-lg-4.btn-grow-shadow
           .card
             figure: a(href="#"): img.card-img-top(src='./templates/img/image1.jpg' alt='Card image cap')
             .card-body
               h3.card-title Giải pháp phần mềm
               p.card-text Internet đã được ứng dụng vào cuộc sống, hoạt động kinh doanh và ngày càng trở nên phổ biến. Xu hướng người dùng sử dụng Internet để tìm kiếm thông tin ...
-        .col-md-6.col-lg-4.d-md-none.d-sm-block
+        .col-md-6.col-lg-4.btn-grow-shadow.d-md-none.d-sm-block
           .card
             figure: a(href="#"): img.card-img-top(src='./templates/img/image1.jpg' alt='Card image cap')
             .card-body
@@ -74,11 +74,11 @@ body
         h3 Bạn đang kinh doanh lĩnh vực nào?
       .row
         .col-md-8.col-lg-8
-          dl.active
+          dl
             dt
               span 01
               |Quy trình thiết kế website theo 3 bước
-            dd Website bán hàng là cửa hàng của bạn trên internet. Nơi bạn có thể giới thiệu sản phẩm, dịch vụ của mình đến với những người có nhu cầu và họ có thể tiến hành mua hàng của bạn ngay trên website mà không cần đến cửa hàng. Vì vậy, website bán hàng của bạn cần thể hiện đầy đủ thông tin sản phẩm, dịch vụ, thông tin liên lạc cũng như các công cụ công cụ đặt hàng, thanh toán trực tuyến
+            dd.active Website bán hàng là cửa hàng của bạn trên internet. Nơi bạn có thể giới thiệu sản phẩm, dịch vụ của mình đến với những người có nhu cầu và họ có thể tiến hành mua hàng của bạn ngay trên website mà không cần đến cửa hàng. Vì vậy, website bán hàng của bạn cần thể hiện đầy đủ thông tin sản phẩm, dịch vụ, thông tin liên lạc cũng như các công cụ công cụ đặt hàng, thanh toán trực tuyến
           dl
             dt
               span 02
@@ -103,22 +103,23 @@ body
           span công nghệ thông tin
         h3 Bạn đang kinh doanh lĩnh vực nào?
       .row
-        .col-xs-6.col-sm-6.col-md-3.col-lg-3
-          .ebook-item
-            figure: a(href="#"): img.card-img-top(src='./templates/img/ebook.jpg' alt='Card image cap')
-            h3.ebook-title Ebook Công Nghệ Thông Tin
-        .col-xs-6.col-sm-6.col-md-3.col-lg-3
-          .ebook-item
-            figure: a(href="#"): img.card-img-top(src='./templates/img/ebook.jpg' alt='Card image cap')
-            h3.ebook-title Ebook Công Nghệ Thông Tin
-        .col-xs-6.col-sm-6.col-md-3.col-lg-3
-          .ebook-item
-            figure: a(href="#"): img.card-img-top(src='./templates/img/ebook.jpg' alt='Card image cap')
-            h3.ebook-title Ebook Công Nghệ Thông Tin
-        .col-xs-6.col-sm-6.col-md-3.col-lg-3.hidden
-          .ebook-item
-            figure: a(href="#"): img.card-img-top(src='./templates/img/ebook.jpg' alt='Card image cap')
-            h3.ebook-title Ebook Công Nghệ Thông Tin
+        .col-12
+          .owl-ebook.owl-carousel.owl-theme
+            .ebook-item
+              figure: a(href="#"): img.card-img-top(src='./templates/img/ebook.jpg' alt='Card image cap')
+              h3.ebook-title Ebook Công Nghệ Thông Tin
+
+            .ebook-item
+              figure: a(href="#"): img.card-img-top(src='./templates/img/ebook.jpg' alt='Card image cap')
+              h3.ebook-title Ebook Công Nghệ Thông Tin
+
+            .ebook-item
+              figure: a(href="#"): img.card-img-top(src='./templates/img/ebook.jpg' alt='Card image cap')
+              h3.ebook-title Ebook Công Nghệ Thông Tin
+
+            .ebook-item
+              figure: a(href="#"): img.card-img-top(src='./templates/img/ebook.jpg' alt='Card image cap')
+              h3.ebook-title Ebook Công Nghệ Thông Tin
   //- footer
   block footer
     include ./elements/_footer.pug

@@ -1,0 +1,106 @@
+$color: #f15a24;
+/*
+Call online
+*/
+.support-online {
+  position: fixed;
+  z-index: 999;
+  left: 15px;
+  bottom: 30px;
+  top: auto !important;
+
+  a {
+    position: relative;
+    margin: 20px 10px;
+    text-align: left;
+    width: 40px;
+    height: 40px;
+  }
+
+  i {
+    width: 40px;
+    height: 40px;
+    background: #f15a24;
+    color: #fff;
+    border-radius: 100%;
+    font-size: 25px;
+    text-align: center;
+    line-height: 40px;
+    position: relative;
+    z-index: 999;
+  }
+
+  a {
+    display: block;
+
+    span {
+      border-radius: 2px;
+      text-align: center;
+      background: $color;
+      padding: 9px;
+      display: none;
+      width: 180px;
+      margin-left: 10px;
+      position: absolute;
+      color: #ffffff;
+      z-index: 999;
+      top: 0px;
+      left: 40px;
+      transition: all 0.2s ease-in-out 0s;
+      animation: headerAnimation 0.7s 1;
+    }
+
+    &:hover span {
+      display: block;
+    }
+
+    span::before {
+      content: "";
+      width: 0;
+      height: 0;
+      border-style: solid;
+      border-width: 10px 10px 10px 0;
+      border-color: transparent $color transparent transparent;
+      position: absolute;
+      left: -10px;
+      top: 10px;
+    }
+  }
+}
+
+/* 
+backtop 
+*/
+.backtop {
+  cursor: pointer;
+  position: fixed;
+  bottom: 60px;
+  right: 20px;
+  z-index: 99;
+  top: auto !important;
+  width: 40px;
+  height: 40px;
+  line-height: 44px;
+  font-weight: bold;
+  text-align: center;
+  display: inline-block;
+  color: #fff;
+  border-radius: 30px;
+  background: $color;
+  text-decoration: none;
+  opacity: 0 !important;
+
+  .fa {
+    font-size: 20px;
+    color: #fff;
+    font-weight: bold;
+  }
+
+  &:hover {
+    background: $color;
+  }
+
+  &.show {
+    opacity: 1 !important;
+  }
+}
