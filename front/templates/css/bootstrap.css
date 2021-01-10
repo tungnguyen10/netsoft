@@ -5218,6 +5218,10 @@ tbody.collapse.show {
   }
 }
 
+#breadcrumb {
+  background-color: #ee9409;
+}
+
 .breadcrumb {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -5225,9 +5229,8 @@ tbody.collapse.show {
   -ms-flex-wrap: wrap;
   flex-wrap: wrap;
   padding: 0.75rem 1rem;
-  margin-bottom: 1rem;
   list-style: none;
-  background-color: #e9ecef;
+  background-color: #ee9409;
   border-radius: 0.25rem;
 }
 
@@ -5248,7 +5251,7 @@ tbody.collapse.show {
 }
 
 .breadcrumb-item.active {
-  color: #6c757d;
+  color: #fff;
 }
 
 .pagination {

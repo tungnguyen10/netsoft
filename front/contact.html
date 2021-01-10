@@ -120,23 +120,54 @@
   <nav id="breadcrumb" aria-label="breadcrumb">
     <div class="container">
       <div class="row">
-        <ol class="breadcrumb">
+        <ul class="breadcrumb">
           <li class="breadcrumb-item"><a href="./">Home</a></li>
-          <li class="breadcrumb-item active" aria-current="page">Giới thiệu</li>
-        </ol>
+          <li class="breadcrumb-item active" aria-current="page">Liên hệ</li>
+        </ul>
       </div>
     </div>
   </nav>
-  <section class="content-page">
+  <section class="section_contact">
     <div class="container">
-      <div class="row">
-        <div class="col-12">
-          <h1 class="title"><span>Giới thiệu</span></h1>
-        </div>
-        <div class="col-12">
-          <p>Bài viết đang cập nhật .....</p>
+      <div class="form-contact">
+        <div class="row">
+          <div class="col-xl-4 col-lg-5 col-md-6 col-12 col-contact">
+            <div class="content-left">
+              <p class="text_des">Công ty cổ phần netsoft</p>
+              <div class="content-contact"><i class="fas fa-map-marker-alt"></i><span><b>Địa chỉ: </b>12 Nguyễn Văn Bảo, Q. Gò Vấp, TP. Hồ Chí Minh Khoa Ngoại ngữ - Tầng trệt - Nhà B</span></div>
+              <div class="content-contact"><i class="fas fa-envelope"></i><span><b>Hotline: </b><a href="tell:02838940390">0283 8940 390</a></span></div>
+              <div class="content-contact"><i class="fas fa-phone"></i><span><b>Email: </b><a href="mailto:dhcn@iuh.edu.vn">dhcn@iuh.edu.vn</a></span></div>
+              <div class="content-contact"><i class="fas fa-clock"></i><span><b>Giờ làm việc: </b>Giờ làm việc: 8h00 – 17h00 từ thứ 2 đến Chủ nhật</span></div>
+            </div>
+          </div>
+          <div class="col-xl-8 col-lg-7 col-md-6 col-12 col-contact-2">
+            <div class="content-right">
+              <p class="text_des">Gửi thông tin</p>
+              <form id="contact" accept-charset="UTF-8" action="/contact" method="post">
+                <input name="FormType" type="hidden" value="contact">
+                <input name="utf8" type="hidden" value="true">
+                <div class="form-signup">
+                  <div class="group_contact">
+                    <fieldset class="form-group col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                      <input class="form-control form-control-lg" placeholder="Họ và tên" type="text" required="" value="" name="contact[Name]">
+                    </fieldset>
+                    <fieldset class="form-group col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                      <input class="form-control form-control-lg" id="email1" placeholder="Email" type="email" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+.[a-z]{2,4}$" required="" value="" name="contact[email]">
+                    </fieldset>
+                    <fieldset class="form-group col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                      <textarea class="form-control content-area form-control-lg" id="comment" placeholder="Nội dung" name="contact[body]" rows="5" required=""></textarea>
+                    </fieldset>
+                    <button class="btn btn-primary btn-lienhe" type="submit">Gửi tin nhắn</button>
+                  </div>
+                </div>
+              </form>
+            </div>
+          </div>
         </div>
       </div>
+    </div>
+    <div class="iFrameMap">
+      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d979.6388035882823!2d106.67952227214906!3d10.845310511090728!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3175298451960a6b%3A0x6beba7ae3a0953dd!2zVsOpIG3DoXkgYmF5IFRoYW5oIFTDuW5n!5e0!3m2!1sen!2s!4v1592500102694!5m2!1sen!2s" width="100%" height="100%" style="border:0" allowfullscreen=""></iframe>
     </div>
   </section>
   <div class="section_policy">

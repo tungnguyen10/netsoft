@@ -87,18 +87,27 @@ if ($("#index").length > 0) {
       },
     },
 	});
-	$('.whychose dt').click(function () { 
-		$(this).next().slideToggle(500).addClass("active");
-  });
-  /** whychose tab*/
+
+  var i =0;
+  setInterval(function(){ 
+    if (i<4) {
+    $('.tabs .tab-link').eq(i).trigger('click');
+    i++
+  }
+  else {
+    i=0;
+    $('.tabs .tab-link').eq(i).trigger('click');
+  }
+  
+  }, 5000);
   $('.tabs .tab-link').click(function(){
 		var tab_id = $(this).attr('data-tab');
 
 		$('.tabs .tab-link').removeClass('current');
 		$('.tab-content').removeClass('current');
 
-		$(this).addClass('current');
-		$("."+tab_id).addClass('current');
+		$(this).addClass('current').fadeIn(500);
+		$("."+tab_id).addClass('current').fadeIn(500);
 	})
   
 }
