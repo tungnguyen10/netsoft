@@ -705,8 +705,26 @@ hgroup {
   h2 {
     font-size: 2.14rem;
     color: #000000;
-    span {
+    
+    
+  }
+  .title{
+    cursor: pointer;
+    &__first{
       color: $color;
+      transition: all 0.5s cubic-bezier(0, 0.2, 1, 1.01);
+    }
+    &__last{
+      color: #000;
+      transition: all 0.5s cubic-bezier(0, 0.2, 1, 1.01);
+    }
+    &:hover{
+      .title__first{
+        color: #000;
+      }
+      .title__last{
+        color: $color;
+      }
     }
   }
   h3 {
@@ -808,6 +826,48 @@ hgroup {
       &.active{
         display: block;
       }
+    }
+  }
+
+  &__content{
+    @extend .flexbetween;
+    &__left{
+      width: 60%;
+    }
+    &__right{
+      width: 40%;
+      img{
+        width: 100%;
+      }
+    }
+    
+  }
+  .tabs {
+    margin: 0px;
+    padding: 0px;
+    position: relative;
+  
+    .tab-link {
+      background: none;
+      color: #222;
+      display: block;
+      padding: 10px 15px;
+      cursor: pointer;
+  
+      &.current {
+        background: #ededed;
+        color: #222;
+      }
+    }
+  }
+  
+  .tab-content {
+    display: none;
+    padding: 0 15px;
+    
+  
+    &.current {
+      display: block;
     }
   }
 }

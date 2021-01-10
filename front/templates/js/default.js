@@ -89,6 +89,16 @@ if ($("#index").length > 0) {
 	});
 	$('.whychose dt').click(function () { 
 		$(this).next().slideToggle(500).addClass("active");
-	});
+  });
+  /** whychose tab*/
+  $('.tabs .tab-link').click(function(){
+		var tab_id = $(this).attr('data-tab');
+
+		$('.tabs .tab-link').removeClass('current');
+		$('.tab-content').removeClass('current');
+
+		$(this).addClass('current');
+		$("."+tab_id).addClass('current');
+	})
   
 }
